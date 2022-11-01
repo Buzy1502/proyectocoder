@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+/**** BODY****/
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  height: 900px;
+  flex-direction: column;
+  background-color: #162d49;
+}
+
+/****GENERALIZANDO****/
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.cabecera {
+  background: #162d49;
+  color: #ebe6d0;
+  text-align: center;
+}
+
+.cabecera__titulo {
+  min-height: 90px;
+  margin-top: 40px;
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.cabecera__link {
+  text-decoration: none;
+  color: #ebe6d0;
+}
+
+.navbar {
+  background-color: #fff;
+  min-height: 45px;
+}
+
+.nav__ul {
+  color: #162d49;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.nav__link {
+  font-weight: bold;
+}
+
+.contenido__principal {
+  min-height: 100vh;
+  background-color: #162d49;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.contenido__pasta__dia {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+}
+
+.titulo_contenido {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+.contenedor__receta {
+  border: 2px solid #fff;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
+.pasta__del__dia-video {
+  width: 760px;
+  height: 415px;
+  border: 2px solid #fff;
+}
+
+.pasta__receta-foto {
+  object-fit: contain;
+  width: 495px;
+  
+}
+
+.pasta_ingrediente {
+  color: #fff;
+  font-size: 20px;
+  align-self: flex-start;
+  padding-left: 25px;
+
+  
+} 
+.pasta_ingrediente li {
+  list-style-type:disc;
+}
+.pasta__titulo {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 35px;
+  margin-bottom: 20px;
+  
+}
+
+.pasta__receta {
+  font-size: 25px;
+  text-align: justify;
+  color: #fff;
+  margin-top: 10px;
+  padding: 10px;
+
+}
+
+.contenedor__formulario {
+  background-color: #fff;
+  height: 500px;
+  width: 300px;
+  border: 2px solid white;
+}
+
+.form {
+  background-color: #162d49;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  gap: 15px;
+  border: 2px solid white;
+  height: 300px;
+  padding: 7px;
+}
+
+.pie__de__pagina {
+  min-height: 80px;
+  margin-top: 20px;
+  background-color: #fff;
+}
