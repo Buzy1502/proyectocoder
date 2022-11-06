@@ -132,6 +132,14 @@ li {
   
 }
 
+h4 {
+  color: #fff;
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .pasta__receta {
   font-size: 25px;
   text-align: justify;
