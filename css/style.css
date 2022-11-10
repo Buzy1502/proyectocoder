@@ -8,11 +8,15 @@
   list-style: none;
 }
 
+html {
+  min-width: 100%;
+}
+
 /**** BODY****/
 body {
+  min-width: 100%;
   font-family: 'Roboto', sans-serif;
   display: flex;
-  height: 900px;
   flex-direction: column;
   background-color: #162d49;
 }
@@ -49,6 +53,8 @@ li {
 .navbar {
   background-color: #fff;
   min-height: 45px;
+  text-transform: capitalize;
+  
 }
 
 .nav__ul {
@@ -60,12 +66,16 @@ li {
   padding-top: 15px;
 }
 
-.nav__link {
-  font-weight: bold;
+.container-fluid {
+  color: #162d49;
+  font-weight: 1000;
+}
+.navbar-brand,.nav-link, .dropdown-item {
+  font-weight: 1000;
+  color: #162d49;
 }
 
 .contenido__principal {
-  /* min-height: 100vh; */
   background-color: #162d49;
   display: flex;
   flex-direction: row;
@@ -97,39 +107,46 @@ li {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  width: 500px;
-  
+  width: 530px;
+  padding-top: 15px;
 }
 
 .pasta__del__dia-video {
-  width: 760px;
   height: 415px;
   border: 2px solid #fff;
 }
 
+.card-title {
+  color: #162d49;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+.card-text {
+  color: #162d49;
+  font-size: 20px;
+}
+
 .pasta__receta-foto {
   object-fit: contain;
-  width: 495px;
-  
+  width: 500px;
 }
 
 .pasta_ingrediente {
-  color: #fff;
+  color: #162d49;
   font-size: 20px;
   align-self: flex-start;
-  padding-left: 25px;
+  padding-left: 25px;  
+}
 
-  
-} 
 .pasta_ingrediente li {
   list-style-type:disc;
 }
+
 .pasta__titulo {
   text-transform: capitalize;
-  color: #fff;
+  color: #162d49;
   font-size: 35px;
   margin-bottom: 20px;
-  
 }
 
 h4 {
@@ -141,12 +158,12 @@ h4 {
 }
 
 .pasta__receta {
-  font-size: 25px;
+  color: #162d49;
+  font-size: 20px;
   text-align: justify;
   color: #fff;
   margin-top: 10px;
   padding: 10px;
-
 }
 
 .contenedor__formulario {
@@ -167,9 +184,36 @@ h4 {
   height: 300px;
   padding: 7px;
 }
+.contenedor-carrusel{
+  margin-top: 20px;
+  max-width: 80%;
+  margin-left: 10%;
+}
+
+.carousel-item img {
+  max-height: 500px;
+}
+
 
 .pie__de__pagina {
   min-height: 80px;
   margin-top: 20px;
   background-color: #fff;
+}
+
+.redes__ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-size: 50px;
+}
+
+/* media query */
+
+@media all and (max-width:960px) {
+
+  .pasta__receta-foto {
+     width: 495px;
+  }
 }
