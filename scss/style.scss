@@ -1,162 +1,160 @@
 // VARIABLES
 
-@import './partials/variables';
+@import "./partials/variables";
 
 // NORMALIZE
 
-@import './partials/normalize';
+@import "./partials/normalize";
 
 // MIXINS
 
-@import './partials/mixins';
+@import "./partials/mixins";
 
 // MAPS
 
-@import './partials/maps';
+@import "./partials/maps";
 
 body {
-    @include flexible (column, none, none);
-    min-width: 100%;
-    font-family: $fuente-principal;
-    background-color: map-get($colors , "color1");
+  @include flexible(column, none, none);
+  min-width: 100%;
+  font-family: $fuente-principal;
+  background-color: map-get($colors, "color1");
+}
 
-    .cabecera {
-        background: map-get($colors , "color1");
-        color: map-get($colors , "color3");
-        text-align: center;
+.cabecera {
+  background: map-get($colors, "color1");
+  color: map-get($colors, "color3");
+  text-align: center;
 
-        .cabecera__titulo {
-            min-height: 90px;
-            margin-top: 40px;
-            font-size: 60px;
-            text-transform: uppercase;
-            letter-spacing: 5px;
+  &__titulo {
+    min-height: 90px;
+    margin-top: 40px;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
 
-            .cabecera__link {
-                text-decoration: none;
-                color: map-get($colors , "color3");
-            }
-        }
+  &__link {
+    text-decoration: none;
+    color: map-get($colors, "color3");
+  }
 
-        .navbar {
-            background-color: map-get($colors , "color2");
-            min-height: 45px;
-            text-transform: capitalize;
+  .navbar {
+    background-color: map-get($colors, "color2");
+    min-height: 45px;
+    text-transform: capitalize;
 
-            .navbar-brand,
-            .nav-link,
-            .dropdown-item {
-                font-weight: 1000;
-                color: #162d49;
-            }
-        }
+    .navbar-brand,
+    .nav-link,
+    .dropdown-item {
+      font-weight: 1000;
+      color: #162d49;
+    }
+  }
+}
+
+.contenido__principal {
+  @include flexible(column, center, center);
+  background-color: map-get($colors, "color1");
+  gap: 30px;
+  padding-top: 20px;
+
+  .form {
+    @include flexible(column, center, center);
+    @include boxing(400px, 500px);
+    background-color: map-get($colors, "color5");
+    gap: 15px;
+    border: 2px solid white;
+    padding: 7px;
+    border-radius: 10px;
+  }
+}
+
+.titulo_contenido {
+  color: map-get($colors, "color3");
+  text-align: center;
+  text-transform: uppercase;
+  font-size: $medium;
+  margin-top: 20px;
+}
+
+main {
+  min-height: 82vh;
+
+  h2.titulo-form {
+    color: map-get($colors, "color3");
+    font-size: $medium;
+  }
+
+  .card {
+    .pasta__del__dia-video {
+      height: 415px;
+      border: 2px solid #fff;
     }
 
-    .contenido__principal {
-        @include flexible(column, center, center);
-        background-color: map-get($colors , "color1");
-        gap: 30px;
-        padding-top: 20px;
-
-        .form {
-            @include flexible (column, center, center);
-            @include boxing (400px, 500px);
-            background-color: map-get($colors , "color5");
-            gap: 15px;
-            border: 2px solid white;
-            padding: 7px;
-            border-radius: 10px;
-        }
+    .pasta__receta-foto {
+      object-fit: contain;
     }
 
-    .titulo_contenido {
-        color: map-get($colors , "color3");
-        text-align: center;
-        text-transform: uppercase;
-        font-size: $medium;
+    .card-body {
+      .card-title {
+        color: #162d49;
+        text-transform: capitalize;
+        font-weight: bolder;
+      }
+
+      .card-text {
+        color: #162d49;
+        font-size: 20px;
+      }
+
+      .pasta_ingrediente {
+        color: #162d49;
+        font-size: 20px;
+        align-self: flex-start;
+        padding-left: 25px;
+      }
+
+      .pasta_ingrediente li {
+        list-style-type: disc;
+      }
+
+      h4.card-text {
+        color: map-get($colors, "color4");
+        font-size: 25px;
+        text-transform: capitalize;
         margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: bolder;
+      }
     }
+  }
+}
 
-    main {
-        min-height: 82vh;
+.contenedor-carrusel {
+  margin-top: 20px;
+  max-width: 80%;
+  margin-left: 10%;
 
-        h2.titulo-form {
-            color: map-get($colors, "color3");
-            font-size: $medium;
-        }
+  .carousel-item img {
+    max-height: 500px;
+  }
+}
 
-        .card {
+.pie__de__pagina {
+  min-height: 80px;
+  margin-top: 20px;
+  background-color: #fff;
 
-            .pasta__del__dia-video {
-                height: 415px;
-                border: 2px solid #fff;
-            }
+  .redes__ul {
+    @include flexible(row, center, center);
+    @include boxing(100%, auto);
+    gap: 20px;
+    font-size: 50px;
+    transition: all 400ms;
+  }
 
-            .pasta__receta-foto {
-                object-fit: contain;
-            }
-
-            .card-body {
-
-                .card-title {
-                    color: #162d49;
-                    text-transform: capitalize;
-                    font-weight: bolder;
-                }
-
-                .card-text {
-                    color: #162d49;
-                    font-size: 20px;
-                }
-
-                .pasta_ingrediente {
-                    color: #162d49;
-                    font-size: 20px;
-                    align-self: flex-start;
-                    padding-left: 25px;
-                }
-
-                .pasta_ingrediente li {
-                    list-style-type: disc;
-                }
-
-                h4.card-text {
-                    color: map-get($colors , "color4");
-                    font-size: 25px;
-                    text-transform: capitalize;
-                    margin-top: 20px;
-                    margin-bottom: 20px;
-                    font-weight: bolder;
-                }
-            }
-        }
-    }
-
-    .contenedor-carrusel {
-        margin-top: 20px;
-        max-width: 80%;
-        margin-left: 10%;
-
-        .carousel-item img {
-            max-height: 500px;
-        }
-    }
-
-    .pie__de__pagina {
-        min-height: 80px;
-        margin-top: 20px;
-        background-color: #fff;
-
-        .redes__ul {
-            @include flexible (row, center, center);
-            @include boxing(100%, auto);
-            gap: 20px;
-            font-size: 50px;
-            transition: all 400ms;
-        }
-
-        .redes__ul > li:hover {
-            transform: scale(.8, .8);
-        }
-    }
+  .redes__ul > li:hover {
+    transform: scale(0.8, 0.8);
+  }
 }
