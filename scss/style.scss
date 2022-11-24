@@ -10,6 +10,8 @@
 
 @import './partials/mixins';
 
+// MAPS
+
 @import './partials/maps';
 
 body {
@@ -65,9 +67,7 @@ body {
             padding: 7px;
             border-radius: 10px;
         }
-
     }
-
 
     .titulo_contenido {
         color: map-get($colors , "color3");
