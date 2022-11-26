@@ -8,7 +8,11 @@
 }
 
 body {
+    @include flexible(column, none, none);
+    min-width: 100%;
     font-family: $fuente-principal;
+    background-color: map-get($colors, "color1");
+    overflow-x: hidden;
 }
 
 ul {

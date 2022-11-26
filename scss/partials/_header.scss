@@ -1,0 +1,35 @@
+@import "./partials/variables";
+@import "./partials/mixins";
+@import "./partials/maps";
+
+.cabecera {
+    background: map-get($colors, "color1");
+    color: map-get($colors, "color3");
+    text-align: center;
+  
+    &__titulo {
+      min-height: 90px;
+      margin-top: 40px;
+      font-size: 60px;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+  
+    &__link {
+      text-decoration: none;
+      color: map-get($colors, "color3");
+    }
+  
+    .navbar {
+      background-color: map-get($colors, "color2");
+      min-height: 45px;
+      text-transform: capitalize;
+  
+      .navbar-brand,
+      .nav-link,
+      .dropdown-item {
+        font-weight: 1000;
+        color: #162d49;
+      }
+    }
+  }

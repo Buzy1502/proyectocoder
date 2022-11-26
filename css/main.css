@@ -6,7 +6,14 @@
   scroll-behavior: smooth; }
 
 body {
-  font-family: "Roboto", sans-serif; }
+  display: flex;
+  flex-flow: column;
+  justify-content: none;
+  align-items: none;
+  min-width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #162d49;
+  overflow-x: hidden; }
 
 ul {
   list-style: none; }
@@ -14,15 +21,6 @@ ul {
 a {
   text-decoration: none;
   font-family: "Roboto", sans-serif; }
-
-body {
-  display: flex;
-  flex-flow: column;
-  justify-content: none;
-  align-items: none;
-  min-width: 100%;
-  font-family: "Roboto", sans-serif;
-  background-color: #162d49; }
 
 .cabecera {
   background: #162d49;
@@ -47,6 +45,46 @@ body {
       font-weight: 1000;
       color: #162d49; }
 
+.titulo_contenido {
+  color: #ebe6d0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  margin-top: 20px; }
+
+main {
+  min-height: 82vh; }
+  main h2.titulo-form {
+    color: #ebe6d0;
+    font-size: 35px; }
+  main .card .pasta__del__dia-video {
+    width: auto;
+    height: 415px;
+    border: 2px solid #fff; }
+  main .card .pasta__receta-foto {
+    object-fit: contain; }
+  main .card .card-body-title {
+    color: #162d49;
+    text-transform: capitalize;
+    font-weight: bolder; }
+  main .card .card-body-text {
+    color: #162d49;
+    font-size: 20px; }
+  main .card .card-body .pasta_ingrediente {
+    color: #162d49;
+    font-size: 20px;
+    align-self: flex-start;
+    padding-left: 25px; }
+  main .card .card-body .pasta_ingrediente li {
+    list-style-type: disc; }
+  main .card .card-body h4.card-text {
+    color: #162d49;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bolder; }
+
 .contenido__principal {
   display: flex;
   flex-flow: column;
@@ -68,45 +106,6 @@ body {
     padding: 7px;
     border-radius: 10px; }
 
-.titulo_contenido {
-  color: #ebe6d0;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 35px;
-  margin-top: 20px; }
-
-main {
-  min-height: 82vh; }
-  main h2.titulo-form {
-    color: #ebe6d0;
-    font-size: 35px; }
-  main .card .pasta__del__dia-video {
-    height: 415px;
-    border: 2px solid #fff; }
-  main .card .pasta__receta-foto {
-    object-fit: contain; }
-  main .card .card-body .card-title {
-    color: #162d49;
-    text-transform: capitalize;
-    font-weight: bolder; }
-  main .card .card-body .card-text {
-    color: #162d49;
-    font-size: 20px; }
-  main .card .card-body .pasta_ingrediente {
-    color: #162d49;
-    font-size: 20px;
-    align-self: flex-start;
-    padding-left: 25px; }
-  main .card .card-body .pasta_ingrediente li {
-    list-style-type: disc; }
-  main .card .card-body h4.card-text {
-    color: #162d49;
-    font-size: 25px;
-    text-transform: capitalize;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-weight: bolder; }
-
 .contenedor-carrusel {
   margin-top: 20px;
   max-width: 80%;
@@ -114,19 +113,35 @@ main {
   .contenedor-carrusel .carousel-item img {
     max-height: 500px; }
 
+footer.pie__de__pagina i.fab {
+  color: #162d49;
+  font-size: 25px;
+  margin-top: 15px; }
+
 .pie__de__pagina {
-  min-height: 80px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 60px;
+  min-width: 100%;
   margin-top: 20px;
   background-color: #fff; }
-  .pie__de__pagina .redes__ul {
+  .pie__de__pagina .redes {
     display: flex;
     flex-flow: row;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    gap: 20px;
-    font-size: 50px;
-    transition: all 400ms; }
-  .pie__de__pagina .redes__ul > li:hover {
-    transform: scale(0.8, 0.8); }
+    align-items: center; }
+    .pie__de__pagina .redes .redes__ul {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      gap: 20px;
+      transition: all 400ms; }
+    .pie__de__pagina .redes .redes__ul > li:hover {
+      transform: scale(0.8, 0.8);
+      border-bottom: 3px solid #162d49; }

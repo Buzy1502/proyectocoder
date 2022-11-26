@@ -1,0 +1,28 @@
+@import "./partials/variables";
+@import "./partials/mixins";
+@import "./partials/maps";
+@import "./partials/loop";
+
+.pie__de__pagina {
+    @include flexible(row, center, center);
+    @include boxing(auto, 60px);
+    min-width: 100%;
+    margin-top: 20px;
+    background-color: #fff;
+
+    .redes {
+        @include flexible(row, center, center);
+       
+        .redes__ul {
+            @include flexible(row, center, center);
+            @include boxing(100%, auto);
+            gap: 20px;
+            transition: all 400ms;
+        }
+        
+        .redes__ul>li:hover {
+            transform: scale(0.8, 0.8);
+            border-bottom: 3px solid $text-color-primary;
+        }
+    }
+}
