@@ -57,33 +57,36 @@ main {
   main h2.titulo-form {
     color: #ebe6d0;
     font-size: 35px; }
-  main .card .pasta__del__dia-video {
+  main .card {
     width: auto;
-    height: 415px;
-    border: 2px solid #fff; }
-  main .card .pasta__receta-foto {
-    object-fit: contain; }
-  main .card .card-body-title {
-    color: #162d49;
-    text-transform: capitalize;
-    font-weight: bolder; }
-  main .card .card-body-text {
-    color: #162d49;
-    font-size: 20px; }
-  main .card .card-body .pasta_ingrediente {
-    color: #162d49;
-    font-size: 20px;
-    align-self: flex-start;
-    padding-left: 25px; }
-  main .card .card-body .pasta_ingrediente li {
-    list-style-type: disc; }
-  main .card .card-body h4.card-text {
-    color: #162d49;
-    font-size: 25px;
-    text-transform: capitalize;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-weight: bolder; }
+    height: 100%; }
+    main .card .pasta__del__dia-video {
+      width: auto;
+      height: 415px;
+      border: 2px solid #fff; }
+    main .card .pasta__receta-foto {
+      object-fit: contain; }
+    main .card .card-body .card-title {
+      color: #162d49;
+      text-transform: capitalize;
+      font-weight: bolder; }
+    main .card .card-body .card-text {
+      color: #162d49;
+      font-size: 20px; }
+    main .card .card-body .pasta_ingrediente {
+      color: #162d49;
+      font-size: 20px;
+      align-self: flex-start;
+      padding-left: 25px; }
+    main .card .card-body .pasta_ingrediente li {
+      list-style-type: disc; }
+    main .card .card-body h4.card-text {
+      color: #162d49;
+      font-size: 25px;
+      text-transform: capitalize;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-weight: bolder; }
 
 .contenido__principal {
   display: flex;
