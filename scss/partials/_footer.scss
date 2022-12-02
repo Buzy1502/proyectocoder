@@ -12,14 +12,14 @@
 
     .redes {
         @include flexible(row, center, center);
-       
+
         .redes__ul {
             @include flexible(row, center, center);
             @include boxing(100%, auto);
             gap: 20px;
             transition: all 400ms;
         }
-        
+
         .redes__ul>li:hover {
             transform: scale(0.8, 0.8);
             border-bottom: 3px solid $text-color-primary;

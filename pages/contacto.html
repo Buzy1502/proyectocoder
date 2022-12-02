@@ -1,166 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="blog de recetas faciles, si lo tuyo es la pasta, estas en lugar correcto. Cocine, coma y sea feliz!">
-    <meta name="keywords" content="recetas, pasta, facil, blog, bolognesa, ñoquis, lasagna">
-    <title>Pasta</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    
-    <link rel="shortcut icon" href="https://pngimg.com/uploads/pasta/pasta_PNG74.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/main.css" />
-  </head>
 
-  <body>
-    <header class="cabecera">
-      <h1 class="cabecera__titulo">
-        <a class="cabecera__link" href="../index.html">Pasta</a>
-      </h1>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">home</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">contacto</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  recetas
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="./pasta_semola.html"
-                      >pasta de semola de trigo</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./pasta_huevo.html"
-                      >pasta de huevo</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./pasta_rellena.html"
-                      >pasta rellena</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./pasta_especial.html"
-                      >pastas especiales</a
-                    >
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="blog de recetas faciles, si lo tuyo es la pasta, estas en lugar correcto. Cocine, coma y sea feliz!">
+  <meta name="keywords" content="recetas, pasta, facil, blog, bolognesa, ñoquis, lasagna">
+  <title>Pasta</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+
+  <link rel="shortcut icon" href="https://pngimg.com/uploads/pasta/pasta_PNG74.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+  <header class="cabecera">
+    <h1 class="cabecera__titulo">
+      <a class="cabecera__link" href="../index.html">Pasta</a>
+    </h1>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                recetas
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./pasta_semola.html">pasta de semola de trigo</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pasta_huevo.html">pasta de huevo</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pasta_rellena.html">pasta rellena</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pasta_especial.html">pastas especiales</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
-
-    <main class="contenido__principal">
-      <h2 class="titulo-form">Contacto</h2>
-      <form class="form" action="#">
-        <label for="nombre_apellido" class="form__label"></label>
-        <input
-          type="text"
-          class="form__input rounded p-2"
-          placeholder="nombre completo"
-          name="nombre_apellido"
-        />
-
-        <label for="telefono" class="form__label"></label>
-        <input
-          type="tel"
-          class="form__input rounded p-2"
-          placeholder="telefono"
-          name="telefono"
-        />
-
-        <label for="email" class="form__label"></label>
-        <input
-          type="email"
-          class="form__input rounded p-2"
-          placeholder="email"
-          name="email"
-        />
-
-        <label for="comentario" class="form__label"></label>
-        <textarea
-          type="text"
-          class="form__input rounded p-2"
-          placeholder="comentario"
-          name="comentario"
-        ></textarea>
-        <div class="contenedor_botones">
-          <button class="boton-enviar btn btn-primary me-2" type="submit">
-            enviar
-          </button>
-          <button class="boton-borrar btn btn-secondary" type="reset">
-            borrar
-          </button>
-        </div>
-      </form>
-    </main>
-
-    <footer class="pie__de__pagina">
-      <div class="redes">
-        <ul class="redes__ul">
-          <li class="footer__icono icono-instagram">
-            <a href="https://www.instagram.com/buzeina/?hl=es" target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </li>
-          <li class="footer__icono icono-twitter">
-            <a href="https://mobile.twitter.com/buzeinarachid" target="_blank"
-              ><i class="fab fa-twitter"></i
-            ></a>
-          </li>
-          <li class="footer__icono icono-facebook">
-            <a href="https://www.facebook.com/buzeinarachid1" target="_blank"
-              ><i class="fab fa-facebook"></i
-            ></a>
-          </li>
-          <li class="footer__icono icono-github">
-            <a href="https://github.com/Buzy1502" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-          </li>
-        </ul>
       </div>
-    </footer>
+    </nav>
+  </header>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/3a77906e13.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <main class="contenido__principal">
+    <h2 class="titulo-form">Contacto</h2>
+    <form class="form" action="#">
+      <label for="nombre_apellido" class="form__label"></label>
+      <input type="text" class="form__input rounded p-2" placeholder="Nombre completo" name="nombre_apellido" />
+
+      <label for="telefono" class="form__label"></label>
+      <input type="tel" class="form__input rounded p-2" placeholder="Telefono" name="telefono" />
+
+      <label for="email" class="form__label"></label>
+      <input type="email" class="form__input rounded p-2" placeholder="Email" name="email" />
+
+      <label for="comentario" class="form__label"></label>
+      <textarea type="text" class="form__input rounded p-2" placeholder="Comentario" name="comentario"></textarea>
+      <div class="contenedor_botones">
+        <button class="boton-enviar btn btn-primary me-2" type="submit">
+          enviar
+        </button>
+        <button class="boton-borrar btn btn-secondary" type="reset">
+          borrar
+        </button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="pie__de__pagina">
+    <div class="redes">
+      <ul class="redes__ul">
+        <li class="footer__icono icono-instagram">
+          <a href="https://www.instagram.com/buzeina/?hl=es" target="_blank"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li class="footer__icono icono-twitter">
+          <a href="https://mobile.twitter.com/buzeinarachid" target="_blank"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="footer__icono icono-facebook">
+          <a href="https://www.facebook.com/buzeinarachid1" target="_blank"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li class="footer__icono icono-github">
+          <a href="https://github.com/Buzy1502" target="_blank"><i class="fab fa-github"></i></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/3a77906e13.js" crossorigin="anonymous"></script>
+</body>
+
 </html>

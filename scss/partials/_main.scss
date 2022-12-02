@@ -2,81 +2,87 @@
 @import "./partials/mixins";
 @import "./partials/maps";
 
-  .titulo_contenido {
+.titulo_contenido {
+  color: map-get($colors, "color3");
+  text-align: center;
+  text-transform: uppercase;
+  font-size: $medium;
+  margin-top: 20px;
+}
+
+main {
+  min-height: 82vh;
+
+  h2.titulo-form {
     color: map-get($colors, "color3");
-    text-align: center;
-    text-transform: uppercase;
     font-size: $medium;
-    margin-top: 20px;
   }
 
-  main {
-    min-height: 82vh;
-  
-    h2.titulo-form {
-      color: map-get($colors, "color3");
-      font-size: $medium;
+  .card {
+    @include boxing(auto, 100%);
+
+    .pasta__del__dia-video {
+      @include boxing(auto, 415px);
+      border: 2px solid #fff;
     }
-  
-    .card {
-      @include boxing(auto, 100%);
-      .pasta__del__dia-video {
-        @include boxing(auto, 415px);
-        border: 2px solid #fff;
-      }
-  
+
+    .foto-receta {
       .pasta__receta-foto {
-        object-fit: contain;
-      }
-  
-      .card-body {
-        .card-title {
-          color: #162d49;
-          text-transform: capitalize;
-          font-weight: bolder;
-        }
-  
-        .card-text {
-          color: #162d49;
-          font-size: 20px;
-        }
-  
-        .pasta_ingrediente {
-          color: #162d49;
-          font-size: 20px;
-          align-self: flex-start;
-          padding-left: 25px;
-        }
-  
-        .pasta_ingrediente li {
-          list-style-type: disc;
-        }
-  
-        h4.card-text {
-          color: map-get($colors, "color4");
-          font-size: 25px;
-          text-transform: capitalize;
-          margin-top: 20px;
-          margin-bottom: 20px;
-          font-weight: bolder;
-        }
+        object-fit: cover;
+        @include boxing(100%, 500px);
       }
     }
-  }
 
-  .contenido__principal {
-    @include flexible(column, center, center);
-    background-color: map-get($colors, "color1");
-    gap: 30px;
-    padding-top: 20px;
-  
-    .form {
-      @include flexible(column, center, center);
-      @include boxing(400px, 500px);
-      background-color: map-get($colors, "color5");
-      gap: 15px;
-      border: 2px solid white;
-      padding: 7px;
-      border-radius: 10px;
+    .card-body {
+      line-height: 35px;
+
+      .card-title {
+        color: #162d49;
+        text-transform: capitalize;
+        font-weight: bolder;
+      }
+
+      .card-text {
+        color: #162d49;
+        font-size: 20px;
+      }
+
+      .pasta_ingrediente {
+        color: #162d49;
+        font-size: 20px;
+        align-self: flex-start;
+        padding-left: 25px;
+      }
+
+      .pasta_ingrediente li {
+        list-style-type: disc;
+      }
+
+      h4.card-text {
+        color: map-get($colors, "color4");
+        font-size: 25px;
+        text-transform: capitalize;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: bolder;
+      }
     }
   }
+}
+
+.contenido__principal {
+  @include flexible(column, center, center);
+  background-color: map-get($colors, "color1");
+  gap: 30px;
+  padding-top: 20px;
+
+  .form {
+    @include flexible(column, center, center);
+    @include boxing(400px, 500px);
+    background-color: map-get($colors, "color5");
+    gap: 15px;
+    border: 2px solid white;
+    padding: 7px;
+    border-radius: 10px;
+  }
+}
